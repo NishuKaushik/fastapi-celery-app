@@ -1,29 +1,47 @@
-# Asynchronous Tasks with FastAPI and Celery
+# FastAPI + Celery App 🚀
 
-Example of how to handle background processes with FastAPI, Celery, and Docker.
+This is a production-ready project that demonstrates **FastAPI** working together with **Celery** for handling background tasks asynchronously using **Redis** and **RabbitMQ** as message brokers.
 
-## Want to learn how to build this?
+## 🔧 Technologies Used
 
-Check out the [post](https://testdriven.io/blog/fastapi-and-celery/).
+- **FastAPI** – Fast web framework for building APIs
+- **Celery** – Distributed task queue for background jobs
+- **Redis** / **RabbitMQ** – Broker and backend for Celery
+- **Docker** / **Docker Compose** – Containerized setup
+- **Python 3.9+**
 
-## Want to use this project?
+## 📁 Features
 
-Spin up the containers:
+- Asynchronous background task processing
+- Real-time task status monitoring via Celery
+- Clean, modular structure
+- Dockerized for development and production
+- Built-in task retries and error handling
 
-```sh
-$ docker-compose up -d --build
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/NishuKaushik/fastapi-celery-app.git
+cd fastapi-celery-app
 ```
 
-Open your browser to [http://localhost:8004](http://localhost:8004) to view the app or to [http://localhost:5556](http://localhost:5556) to view the Flower dashboard.
+### Run Using Docker
 
-Trigger a new task:
-
-```sh
-$ curl http://localhost:8004/tasks -H "Content-Type: application/json" --data '{"type": 0}'
+```bash
+docker-compose up --build
 ```
 
-Check the status:
+### Access the App
 
-```sh
-$ curl http://localhost:8004/tasks/<TASK_ID>
-```
+- FastAPI docs: [http://localhost:8004/docs](http://localhost:8004/docs)
+
+## 📧 Contact
+
+- 📬 **Email**: [nishukaushik166@gmail.com](mailto:nishukaushik166@gmail.com)
+- 💼 **LinkedIn**: [linkedin.com/in/nishukaushik166](https://www.linkedin.com/in/nishukaushik166/)
+
+---
+
+> ⭐ Star the repo if you find it helpful!
